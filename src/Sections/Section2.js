@@ -11,7 +11,7 @@ import Sp8 from "../Assets/beach ticketr site/Sp8.jpg";
 const Section2 = () => {
   return (
     <div id="Section2" className=" w-full p-5 flex justify-center items-center ">
-      <div className="flex justify-center items-center flex-col lg:w-[80vw] w-[60vw] bg-black rounded-lg lg:rounded-full">
+      <div className="flex justify-center items-center flex-col lg:w-[80vw] w-[80vw] bg-black rounded-lg lg:rounded-full">
         <div className=" hidden flex justify-center items-center flex-col">
           <h1 className="font-extrabold text-3xl lg:text-4xl leading-[55px] my-5 lg:leading-normal mb-3 bg-gradient-to-r from-[#ff0000] via-[#f86a6a] to-white bg-clip-text text-transparent">
             Sponsors

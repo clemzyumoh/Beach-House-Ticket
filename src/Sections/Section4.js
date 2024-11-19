@@ -45,8 +45,8 @@ const cardsData = [
       id="Section4"
       className=" flex justify-center items-center flex-col py-10"
     >
-      <div className="flex justify-center items-center flex-col w-[90vw]  lg:w-[80vw] md:w-[80vw] ">
-        <h1 className="text-3xl font-bold text-center text-black my-8">Testimonials</h1>
+      <div className="flex justify-center ml-36 md:ml-0 items-center flex-col w-[100vw]  lg:w-[80vw] md:w-[80vw] ">
+        <h1 className="text-3xl font-bold text-center text-black mr-24 md:mr-0 my-8">Testimonials</h1>
         <div className='bg-black'>
           <CardSlider
             cards={cardsData}

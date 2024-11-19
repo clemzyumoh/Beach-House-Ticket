@@ -19,7 +19,7 @@ const Section1 = () => {
         backgroundImage: `url(${bg})`, // Path to your image
       }}
     >
-      <div className="flex justify-center items-center md:w-[80vw]  bg-white bg-opacity-30 lg:w-[60vw]">
+      <div className="flex justify-center items-center w-[80vw]  bg-white bg-opacity-30 lg:w-[60vw]">
         <div className=" py-8 h-full text-black  text-center flex justify-center items-center">
           <div className="flex justify-center items-center flex-col">
             <h1 className="text-6xl lg:text-7xl font-bold">Beach House Party!</h1>
