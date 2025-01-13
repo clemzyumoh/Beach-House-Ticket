@@ -29,10 +29,10 @@ const Section1 = () => {
               alt="banner logo"
             />
 
-            <p className="text-2xl my-5 font-semibold text-shadow">
+            <p className="text-2xl my-5 font-bold text-shadow">
               Limited Tickets , Unlimited Adventure
             </p>
-            <button className="w-full py-2 px-6 lg:py-3 text-white lg:px-10 bg-gradient-to-r from-[#ff0000] to-[#232121] text-center rounded-3xl relative font-bold hover:bg-gradient-to-l from-[#7947df] to-[#381d6d]  transition-all hover:delay-1000  hover:ease-in-out">
+            <button className="w-full py-2 px-6 lg:py-3 text-white lg:px-10 bg-[#7947df] text-center rounded-3xl relative font-bold hover:bg-gradient-to-l from-[#7947df] to-[#381d6d]  transition-all hover:delay-1000  hover:ease-in-out">
               <Link
                 to="Section2"
                 className="cursor-pointer"

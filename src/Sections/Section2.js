@@ -10,17 +10,21 @@ import Sp8 from "../Assets/beach ticketr site/Sp8.jpg";
 
 const Section2 = () => {
   return (
-    <div id="Section2" className=" w-full p-5 flex justify-center items-center ">
-      <div className="flex justify-center items-center flex-col lg:w-[80vw] w-[80vw] bg-black rounded-lg lg:rounded-full">
-        <div className=" hidden flex justify-center items-center flex-col">
-          <h1 className="font-extrabold text-3xl lg:text-4xl leading-[55px] my-5 lg:leading-normal mb-3 bg-gradient-to-r from-[#ff0000] via-[#f86a6a] to-white bg-clip-text text-transparent">
-            Sponsors
+    <div
+      id="Section2"
+      className=" w-full p-5 flex justify-center items-center "
+    >
+      <div className="flex justify-center items-center flex-col lg:w-[80vw] w-[80vw] ">
+        <div className="  flex justify-center items-center flex-col mb-10">
+          <h1 className="font-extrabold text-3xl lg:text-4xl leading-[55px] my-5 lg:leading-normal mb-3 bg-gradient-to-r from-[#7947df] via-[#7947df] to-[#381d6d]/50 bg-clip-text text-transparent">
+            Join these Brands
           </h1>
+          <p className="text-neutral-600">We've had the pleasure of working with these brands</p>
         </div>
         <div className="flex justify-center items-center w-[80vw] md:flex-col  flex-col lg:flex-row">
           <div className="flex justify-around items-center">
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp1}
@@ -30,7 +34,7 @@ const Section2 = () => {
               <p className="font-bold text-neutral-400">Lions Vague</p>
             </div>
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp2}
@@ -42,7 +46,7 @@ const Section2 = () => {
           </div>
           <div className="flex justify-around items-center">
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp3}
@@ -52,7 +56,7 @@ const Section2 = () => {
               <p className="font-bold text-neutral-400">Soft Wears</p>
             </div>
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp4}
@@ -64,7 +68,7 @@ const Section2 = () => {
           </div>
           <div className="flex justify-around items-center">
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp5}
@@ -74,7 +78,7 @@ const Section2 = () => {
               <p className="font-bold text-neutral-400">Farms</p>
             </div>
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp6}
@@ -86,7 +90,7 @@ const Section2 = () => {
           </div>
           <div className="flex justify-around items-center">
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp7}
@@ -96,14 +100,14 @@ const Section2 = () => {
               <p className="font-bold text-neutral-400">La Cucina</p>
             </div>
             <div className="flex justify-center items-center flex-col mx-5">
-              <div className="flex items-center justify-center rounded-full object-cover   bg-gray-100 h-24 w-24">
+              <div className="flex items-center justify-center rounded-full object-cover  shadow-[#7947df] shadow-2xl bg-neutral-200 h-24 w-24">
                 <img
                   className="h-20 w-20 rounded-full "
                   src={Sp8}
                   alt="sponsor logo"
                 />
               </div>
-              <p className="font-bold text-neutral-400">Farms</p>
+              <p className="font-bold text-neutral-300">Farms</p>
             </div>
           </div>
         </div>

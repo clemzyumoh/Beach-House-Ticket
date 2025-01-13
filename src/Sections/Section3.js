@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Carousel from "../Components/Carousel";
 import projectImage1 from "../Assets/beach ticketr site/cap.png";
 import projectImage2 from "../Assets/beach ticketr site/MERCH STUNNER.png";
@@ -31,6 +31,6 @@ const Section3 = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Section3
+export default Section3;
