@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 
 const LoginPage = ({ onLogin }) => {
@@ -27,7 +29,7 @@ const LoginPage = ({ onLogin }) => {
      e.preventDefault();
      try {
        const response = await axios.post(
-         "http://localhost:5000/api/admin/login",
+         `${backendUrl}/api/admin/login`,
          {
            username,
            password,

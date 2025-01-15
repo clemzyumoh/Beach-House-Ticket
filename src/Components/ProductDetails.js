@@ -5,6 +5,8 @@ import axios from "axios";
 //import { PaystackButton } from "react-paystack";
 import { useNavigate } from "react-router-dom";
 import logo from "../Assets/beach ticketr site/HJSAHJFAF.png";
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 const ProductDetails = () => {
   const navigate = useNavigate();
@@ -28,7 +30,7 @@ const ProductDetails = () => {
     const fetchProductDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `${backendUrl}/api/products/${id}`
         );
         const productData = response.data;
 

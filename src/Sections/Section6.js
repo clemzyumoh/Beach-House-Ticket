@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 //import img from "../Assets/beach ticketr site/cap.png";
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 const Section6 = () => {
   const [products, setProducts] = useState([]);
@@ -9,7 +11,7 @@ const Section6 = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get(`${backendUrl}/api/products`);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {

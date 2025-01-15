@@ -290,7 +290,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
 const AdminPage = () => {
   console.log("AdminPage rendered");
   const [dashboardData, setDashboardData] = useState(null);
@@ -301,7 +301,7 @@ const AdminPage = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          "http://localhost:5000/api/admin/dashboard-summary",
+          `${backendUrl}/api/admin/dashboard-summary`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }

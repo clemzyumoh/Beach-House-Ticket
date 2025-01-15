@@ -7,6 +7,8 @@ import img3 from "../Assets/images/vip.png";
 import img4 from "../Assets/images/gold.png";
 //import { IoIosStar } from "react-icons/io";
 //import { IoIosStarHalf } from "react-icons/io";
+const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
 
 
 const Section5 = () => {
@@ -16,7 +18,7 @@ const Section5 = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get(`${backendUrl}/api/products`);
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
