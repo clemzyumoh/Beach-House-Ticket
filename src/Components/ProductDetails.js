@@ -76,7 +76,7 @@ const ProductDetails = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/payment/initialize",
+        `${backendUrl}/api/payment/initialize`,
         {
           name: userDetails.name,
           email: userDetails.email,

@@ -12,32 +12,68 @@ const Section6 = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${backendUrl}/api/products`);
-        setProducts(response.data);
-        setLoading(false);
+         if (Array.isArray(response.data)) {
+          setProducts(response.data);
+          setLoading(false);
+        } else {
+          console.error("Expected an array, but got:", response.data);
+        }
       } catch (error) {
         console.error("Error fetching products:", error);
         setLoading(false);
       }
+     
     };
 
     fetchProducts();
   }, []);
   // Filter products by type
-  const blackTshirt = products.find(
-    (product) => product.type === "product" && product.name === "Black T-Shirt"
-  );
-   const BlackTshirt = products.find(
-     (product) => product.type === "product" && product.name === "black T-Shirt"
-   );
-  const whiteTshirt = products.find(
-    (product) => product.type === "product" && product.name === "White T-Shirt"
-  );
-  const whitecap = products.find(
-    (product) => product.type === "product" && product.name === "White Cap"
-  );
-  const blackcap = products.find(
-    (product) => product.type === "product" && product.name === "Black Cap"
-  );
+
+ const blackTshirt = Array.isArray(products)
+   ? products.find(
+       (product) =>
+         product.type === "product" && product.name === "Black T-Shirt"
+     )
+   : null;
+
+ const BlackTshirt = Array.isArray(products)
+   ? products.find(
+       (product) =>
+         product.type === "product" && product.name === "black T-Shirt"
+     )
+   : null;
+ const whiteTshirt = Array.isArray(products)
+   ? products.find(
+       (product) =>
+         product.type === "product" && product.name === "White T-Shirt"
+     )
+   : null;
+ const whitecap = Array.isArray(products)
+   ? products.find(
+       (product) => product.type === "product" && product.name === "White Cap"
+     )
+   : null;
+ const blackcap = Array.isArray(products)
+   ? products.find(
+       (product) => product.type === "product" && product.name === "Black Cap"
+     )
+   : null;
+
+  // const blac = products.find(
+  //   (product) => product.type === "product" && product.name === "Black T-Shirt"
+  // );
+  //  const BlackTshi = products.find(
+  //    (product) => product.type === "product" && product.name === "black T-Shirt"
+  //  );
+  // const whiteTsh = products.find(
+  //   (product) => product.type === "product" && product.name === "White T-Shirt"
+  // );
+  // const whiteca = products.find(
+  //   (product) => product.type === "product" && product.name === "White Cap"
+  // );
+  // const black = products.find(
+  //   (product) => product.type === "product" && product.name === "Black Cap"
+  // );
 
   if (loading) return <p>Loading...</p>;
   // Handle select function for redirecting to the product's detail page

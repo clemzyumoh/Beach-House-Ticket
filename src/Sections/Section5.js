@@ -9,8 +9,6 @@ import img4 from "../Assets/images/gold.png";
 //import { IoIosStarHalf } from "react-icons/io";
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
-
-
 const Section5 = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -19,8 +17,13 @@ const Section5 = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(`${backendUrl}/api/products`);
-        setProducts(response.data);
-        setLoading(false);
+        console.log("Fetched data:", response.data); // Debugging step
+        if (Array.isArray(response.data)) {
+          setProducts(response.data);
+          setLoading(false);
+        } else {
+          console.error("Expected an array, but got:", response.data);
+        }
       } catch (error) {
         console.error("Error fetching products:", error);
         setLoading(false);
@@ -30,24 +33,56 @@ const Section5 = () => {
     fetchProducts();
   }, []);
   // Filter products by type
-  const goldTicket = products.find(
-    (product) => product.type === "ticket" && product.ticketCategory === "Gold"
-  );
-  const vipTicket = products.find(
-    (product) => product.type === "ticket" && product.ticketCategory === "VIP"
-  );
-  const regularTicket = products.find(
-    (product) =>
-      product.type === "ticket" && product.ticketCategory === "Regular"
-  );
-  const platinumTicket = products.find(
-    (product) =>
-      product.type === "ticket" && product.ticketCategory === "Platinum"
-  );
-  const diamondTicket = products.find(
-    (product) =>
-      product.type === "ticket" && product.ticketCategory === "Diamond"
-  );
+  const goldTicket = Array.isArray(products)
+    ? products.find(
+        (product) =>
+          product.type === "ticket" && product.ticketCategory === "Gold"
+      )
+    : null;
+
+  const vipTicket = Array.isArray(products)
+    ? products.find(
+        (product) =>
+          product.type === "ticket" && product.ticketCategory === "Vip"
+      )
+    : null;
+  const regularTicket = Array.isArray(products)
+    ? products.find(
+        (product) =>
+          product.type === "ticket" && product.ticketCategory === "Regular"
+      )
+    : null;
+  const platinumTicket = Array.isArray(products)
+    ? products.find(
+        (product) =>
+          product.type === "ticket" && product.ticketCategory === "Platinum"
+      )
+    : null;
+  const diamondTicket = Array.isArray(products)
+    ? products.find(
+        (product) =>
+          product.type === "ticket" && product.ticketCategory === "Diamond"
+      )
+    : null;
+
+  // const golTicket = products.find(
+  //   (product) => product.type === "ticket" && product.ticketCategory === "Gold"
+  // );
+  // const v = products.find(
+  //   (product) => product.type === "ticket" && product.ticketCategory === "VIP"
+  // );
+  // const r = products.find(
+  //   (product) =>
+  //     product.type === "ticket" && product.ticketCategory === "Regular"
+  // );
+  // const plat = products.find(
+  //   (product) =>
+  //     product.type === "ticket" && product.ticketCategory === "Platinum"
+  // );
+  // const di = products.find(
+  //   (product) =>
+  //     product.type === "ticket" && product.ticketCategory === "Diamond"
+  // );
   //const tShirt = products.find((product) => product.name === "Black T-shirt" && product.type === "product");
   if (loading) return <p>Loading...</p>;
   // function handleSelect(product) {
