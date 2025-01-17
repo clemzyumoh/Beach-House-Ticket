@@ -85,7 +85,7 @@ const Section6 = () => {
     }
   }
   return (
-    <div id="Section6" className="my-16">
+    <div id="Section6" className="my-16 box-border">
       <div className="flex justify-center items-center flex-col">
         <div className="  flex justify-center items-center flex-col mb-10">
           <h1 className="font-extrabold text-3xl lg:text-4xl leading-[55px] my-5 lg:leading-normal mb-3 bg-gradient-to-r from-[#7947df] via-[#7947df] to-[#381d6d]/50 bg-clip-text text-transparent">

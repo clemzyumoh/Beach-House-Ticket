@@ -42,7 +42,7 @@ const Section4 = () => {
   return (
     <div
       id="Section4"
-      className=" flex  justify-center items-center flex-col py-10"
+      className=" flex box-border justify-center items-center flex-col py-10"
     >
       <div className="flex justify-center  md:ml-0 items-center flex-col w-[80vw]  lg:w-[80vw] md:w-[80vw] ">
         <div className="  flex justify-center items-center flex-col mb-10">

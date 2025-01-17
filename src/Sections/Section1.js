@@ -14,7 +14,7 @@ const Section1 = () => {
   return (
     <div
       id="Section1"
-      className="  h-screen bg-cover bg-center bg-no-repeat  w-[100vw] flex items-center justify-center mx-0 text-black"
+      className="h-screen bg-cover bg-center bg-no-repeat box-border w-[100vw] flex items-center justify-center mx-0 text-black"
       style={{
         backgroundImage: `url(${bg})`, // Path to your image
       }}

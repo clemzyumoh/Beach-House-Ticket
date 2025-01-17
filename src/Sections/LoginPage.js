@@ -80,7 +80,7 @@ const LoginPage = ({ onLogin }) => {
     //     </button>
     //   </form>
     // </div>
-    <div className="w-full flex justify-center py-52 bg-gray-100 items-center">
+    <div className="w-full flex justify-center py-52 bg-gray-100 items-center box-border">
       <div className="flex items-center w-[75vw] flex-col justify-center   text-black">
         <h1 className="mb-10 text-2xl font-bold">Login</h1>
         <form className="w-[75vw] md:w-[45vw]" onSubmit={handleLogin}>

@@ -12,7 +12,7 @@ const Section2 = () => {
   return (
     <div
       id="Section2"
-      className=" w-full p-5 flex justify-center items-center "
+      className=" w-full p-5 flex justify-center items-center box-border "
     >
       <div className="flex justify-center items-center flex-col lg:w-[80vw] w-[80vw] ">
         <div className="  flex justify-center items-center flex-col mb-10">

@@ -11,7 +11,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="w-full bg-neutral-900 px-10 md:px-20 lg:px-24 pt-10 mt-20 ">
+    <div className="w-full bg-neutral-900 px-10 md:px-20 lg:px-24 pt-10 mt-20 box-border">
       <div className="flex justify-between w-full items-center flex-col lg:flex-row">
         <div className="flex justify-start items-start w-full flex-col">
           <div className="flex justify-start w-full items-center mb-5">
