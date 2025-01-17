@@ -46,7 +46,7 @@ function App() {
         </main>
       </Router> */}
       <Router>
-        <main className="h-screen pb-14 lg:pb-0 text-white relative">
+        <main className="h-screen pb-14 lg:pb-0 text-white relative overflow-x-hidden">
           <Routes>
             {/* Public Routes */}
             <Route
