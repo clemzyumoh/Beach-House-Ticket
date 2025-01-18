@@ -290,7 +290,7 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-const backendUrl = process.env.REACT_APP_BACKEND_URL;
+const backend = process.env.REACT_APP_BACKEND_URL;
 const AdminPage = () => {
   console.log("AdminPage rendered");
   const [dashboardData, setDashboardData] = useState(null);
@@ -301,7 +301,7 @@ const AdminPage = () => {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `${backendUrl}/api/admin/dashboard-summary`,
+          `${backend}/api/admin/dashboard-summary`,
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -341,7 +341,7 @@ const AdminPage = () => {
 
       // Send a DELETE request
       const response = await axios.delete(
-        "http://localhost:5000/api/transactions/delete-selected-transactions",
+        `${backend}/api/transactions/delete-selected-transactions`,
         {
           headers: { Authorization: `Bearer ${token}` },
           data: { transactionIds: selectedTransactions }, // Send data as part of the body
